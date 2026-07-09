@@ -1,0 +1,55 @@
+# Prerequisites
+*.user
+*.userosscache
+*.sln.docstates
+
+# Metadata and Cache
+.vs/
+.vscode/
+*.suo
+*.opensln
+*.sdf
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.db
+*.opendb
+*.VC.db
+
+# Build Outputs (VC++ and CUDA)
+x64/
+x86/
+Debug/
+Release/
+ARM/
+ARM64/
+bin/
+obj/
+*.ipch/
+*.aps
+*.log
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
+*.iobj
+*.ipdb
+*.pdb
+*.obj
+*.exe
+*.dll
+*.lib
+*.ilk
+*.exp
+*.map
+*.cu.obj
+*.cu.o
+
+# Local Benchmark and Temporary Files
+benchmark_test.bin
+*.huff
+*.dec
+*.cpu.huff
+*.gpu.huff
+*.cpu.dec
+*.gpu.dec
+*.bin

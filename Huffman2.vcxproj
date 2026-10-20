@@ -77,17 +77,17 @@
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="src\gpu_huffman.cu" />
   </ItemGroup>
   <ItemGroup>
-    <None Include=".vscode\tasks.json" />
+
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Huffman2.cpp" />
-    <ClCompile Include="HuffmanCPU.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\cpu_huffman.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="kernels.cuh" />
+    <ClInclude Include="include\huffman_kernels.cuh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

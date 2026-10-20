@@ -61,8 +61,29 @@ The benchmark runs the complete file twice (once per pipeline) and compares thei
 
 ## How to Build and Run in Visual Studio
 
-1. Open `Huffman2.sln` in **Visual Studio**.
+1. Open `Huffman2.sln` in **Visual Studio**. See [build prerequisites](docs/BUILD_REQUIREMENTS.md).
 2. Ensure you have the **CUDA Toolkit** installed (v12.x recommended).
 3. Set the build configuration to **Release / x64**.
 4. Right-click the project `Huffman2` -> **Build**.
 5. Run the executable. The program will prompt you to choose between selecting an existing file from disk or generating a compressible test file (10 MB to 1 GB) for immediate benchmarking.
+
+---
+
+## Repository layout
+
+```text
+.
+├── src/
+│   ├── main.cpp                  # CLI, file selection, benchmark reporting
+│   ├── cpu_huffman.cpp           # CPU compression/decompression implementation
+│   └── gpu_huffman.cu            # CUDA GPU kernels and host-side GPU pipeline
+├── include/
+│   └── huffman_kernels.cuh       # Shared declarations and timing structures
+├── docs/
+│   └── BUILD_REQUIREMENTS.md     # Windows, Visual Studio and CUDA prerequisites
+├── Huffman2.sln                 # Visual Studio solution (retained for compatibility)
+├── Huffman2.vcxproj             # Visual Studio CUDA project
+└── README.md
+```
+
+The source files were organized without changing their algorithms. The existing solution and project filenames remain unchanged so prior Visual Studio workflows continue to target the same project.

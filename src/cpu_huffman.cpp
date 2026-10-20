@@ -1,4 +1,4 @@
-#include "kernels.cuh"
+#include "../include/huffman_kernels.cuh"
 #include <iostream>
 #include <fstream>
 #include <vector>

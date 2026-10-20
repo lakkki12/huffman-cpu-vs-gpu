@@ -8,7 +8,7 @@
 #include <iomanip>
 #include <windows.h>
 #include <commdlg.h>
-#include "kernels.cuh"
+#include "../include/huffman_kernels.cuh"
 
 // Helper to open standard Windows file dialog
 std::string openFileDialog() {

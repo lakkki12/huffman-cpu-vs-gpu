@@ -4,6 +4,12 @@ A high-performance C++ systems programming project implementing **True Huffman C
 
 The project evaluates and benchmarks parallel GPU execution against a sequential CPU implementation on workloads ranging from **10 MB to 1 GB** on an **NVIDIA GTX 1050 Ti (4 GB VRAM)** and an **Intel Core i5-8500H CPU**.
 
+## Why I built this
+
+My interest in GPU programming began during my Computer Architecture and Organization course. My faculty encouraged us to go beyond the theory and understand how computers actually execute instructions. While exploring different architectures, I came across NVIDIA CUDA and learned about its role in accelerating deep-learning frameworks such as TensorFlow.
+
+I wanted to understand how GPU parallel execution differs from a traditional CPU program, so I chose Huffman coding as a practical starting point. What began as a simple compression experiment became a way to explore GPU kernels, memory management, parallel execution, and the challenges of adapting a sequential algorithm to a GPU. The project grew out of that curiosity rather than starting as a performance benchmark alone.
+
 ---
 
 ## Performance Benchmark & Results (NVIDIA GTX 1050 Ti)
